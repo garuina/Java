@@ -12,15 +12,19 @@ public class _10 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int num1 = sc.nextInt();
+		int num1 = sc.nextInt(); 
+		int num2 = sc.nextInt();
+		int num3 = sc.nextInt();
+		int num4 = sc.nextInt();
+		int num5 = sc.nextInt();
+		int num6 = sc.nextInt();
 		
-		if(num1 < 1) {
-			System.out.print(num1 + ( 1 - num1) );
-		}
-		else {
-			System.out.print(num1 - (num1-1));
-		}
-
+		System.out.println( 1 - num1 );
+		System.out.println( 1 - num2 );
+		System.out.println( 2 - num3 );
+		System.out.println( 2 - num4 );
+		System.out.println( 2 - num5 );
+		System.out.println( 8 - num6 );
 		
 	}
 }
