@@ -12,7 +12,7 @@ public class _05 {
 		
 		if( H>0 && M>=45 ) {
 			System.out.print(H + " ");
-			System.out.print(M-45);
+			System.out.print(45-M );
 		
 		}else if(H>0 && M<45) {
 			System.out.print(H-1 + " ");
