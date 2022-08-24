@@ -7,20 +7,23 @@ public class _06 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int A = sc.nextInt();
-		int B = sc.nextInt();
-		int C = sc.nextInt();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
 		
-		if(C < 60) {
-			if(B + C < 60) {
-				System.out.print(A + 1 + " " );
-				System.out.print(B + C );
-			}else if (B + C > 60) {
-				
+		if (b+c > 60) {
+			a =  a+ (b+c)/60;
+			b = (b+c) - (((b+c)/60)* 60);
+			if (a == 24) {
+				System.out.println(0 + " " + b);
+			}else {
+				System.out.println(a + " " + b);
 			}
-			
-			
+		}else {
+			b= b + c;
+			System.out.println(a + " " + b);
 		}
+		
 		
 		
 	}
