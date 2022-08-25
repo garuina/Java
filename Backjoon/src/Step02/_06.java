@@ -11,18 +11,14 @@ public class _06 {
 		int b = sc.nextInt();
 		int c = sc.nextInt();
 		
-		if (b+c > 60) {
-			a =  a+ (b+c)/60;
-			b = (b+c) - (((b+c)/60)* 60);
-			if (a == 24) {
-				System.out.println(0 + " " + b);
-			}else {
-				System.out.println(a + " " + b);
-			}
-		}else {
-			b= b + c;
-			System.out.println(a + " " + b);
-		}
+		int min = b + a *60;
+		min += c;
+		
+		int hour = (min/60) % 24 ;
+		int minute = min % 60;
+		
+		System.out.println(hour + " " + minute);
+		
 		
 		
 		
