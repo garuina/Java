@@ -9,15 +9,20 @@ public class _04 {
 		
 		int x = sc.nextInt();
 		int n = sc.nextInt();
-		
+	
+		int tot =0;
 		
 		for(int i = 1; i<=n ; i++) {
 			int a = sc.nextInt();
 			int b = sc.nextInt();
 			
-			int tot = a * b;
-		
-			System.out.println(tot);
+			int s = a * b;
+			tot += s;
+			
+		}if (tot == x) {
+			System.out.println("Yes");
+		}else {
+			System.out.println("No");
 		}
 		
 		
