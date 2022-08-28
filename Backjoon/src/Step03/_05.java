@@ -1,28 +1,19 @@
 package Step03;
-
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-
-
+import java.io.*;
 public class _05 {
-	public static void main(String[] args) throws Exception {
-		
+
+	public static void main(String[] args) throws IOException {
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bW = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer st;
-		StringTokenizer st;
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int n = Integer.parseInt(br.readLine());
 		
-		for(int i=0; i<TC; i++) {
-            st = new StringTokenizer(br.readLine());
-            int A = Integer.parseInt(st.nextToken());
-            int B = Integer.parseInt(st.nextToken());
-            int sum = A+B;
- 
-            bw.write(sum + "\n");
-        }
-        bw.flush();
-    }
-		
+		for (int i = 0; i < n; i++) {
+			String string = br.readLine();
+			int a = Integer.parseInt(string.split(" ")[0]);
+			int b = Integer.parseInt(string.split(" ")[1]);
+			bw.write(a+b+"\n");
+		}
+		bw.flush();
 	}
 }
