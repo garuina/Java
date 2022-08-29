@@ -6,10 +6,13 @@ public class VIPcustomer extends Customer {
 	private int agentID;
 	double saleRatio;
 	
-	public VIPcustomer() {
+	public VIPcustomer(int customerID, String customerName, int agentID) {
+		super(customerID, customerName);
+		this.agentID = agentID;
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
+		System.out.println("VIPcustomer() 생성자 호출 ");
 	}
 	
 	public int calcPrice(int price) {
