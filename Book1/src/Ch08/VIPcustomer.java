@@ -12,7 +12,7 @@ public class VIPcustomer extends Customer {
 		customerGrade = "VIP";
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
-		System.out.println("VIPcustomer() 생성자 호출 ");
+		
 	}
 	
 	public int calcPrice(int price) {
