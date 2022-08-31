@@ -7,9 +7,14 @@ public class Customer {
 	int bonusPoint;
 	double bonusRatio;
 	
+	public Customer() {
+		initCustomer();
+	}
+	
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
+		initcustomer();
 		
 		customerGrade = "silver";
 		bonusRatio = 0.01;
