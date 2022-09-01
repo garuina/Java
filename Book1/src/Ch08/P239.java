@@ -6,6 +6,7 @@ public class P239 {
 		customerLee.setCustomerID(10010);
 		customerLee.setCustomerName("이순신");
 		customerLee.bonusPoint = 1000;
+		
 		System.out.println(customerLee.showCustomerInfo());
 		
 		

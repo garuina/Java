@@ -14,8 +14,9 @@ public class Customer {
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
-		initcustomer();
-		
+		initCustomer();
+	}	
+		private void initCustomer(){
 		customerGrade = "silver";
 		bonusRatio = 0.01;
 		
