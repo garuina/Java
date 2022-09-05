@@ -9,7 +9,24 @@ public class _03 {
 		int n = sc.nextInt();
 		int cnt = 0;
 		
+		/*0<n<=1000
+		 *1. n 이 1000 
+		 * 
+		 * 2. n이 100
+		 * 
+		 * 3. n이 10
+		 *  (n/10)
+		 * 
+		 * 4.n이 1
+		 * cnt++
+		 */
 		
+		for(int i=0; i<n; i++) {
+			if(n=1000) {
+				
+				
+			}
+		}
 		
 		
 		
