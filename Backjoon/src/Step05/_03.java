@@ -4,31 +4,24 @@ import java.util.Scanner;
 
 public class _03 {
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
+		
+		// 123 n/100, ((n%100)-(n%10))/10, n%10 
+		
 		int n = sc.nextInt();
 		int cnt = 0;
 		
-		/*0<n<=1000
-		 *1. n 이 1000 
-		 * 
-		 * 2. n이 100
-		 * 
-		 * 3. n이 10
-		 *  (n/10)
-		 * 
-		 * 4.n이 1
-		 * cnt++
-		 */
-		
-		for(int i=0; i<n; i++) {
-			if(n=1000) {
-				
-				
+		for(int i=1; i<=n; i++) {
+			if(i>=100 && i<1000) {
+				int a = i/100;
+				int b = ((i%100)-(i%10))/10;
+				int c = i%10;
+				if(b-a == c-b) {
+					cnt++;
+				}
+			}else if(i<100 ) {
+				cnt++;
 			}
-		}
-		
-		
-		
+		}System.out.println(cnt);
 	}
 }
