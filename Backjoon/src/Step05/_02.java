@@ -1,16 +1,23 @@
 package Step05;
 
 public class _02 {
-	
-	public void d(n){
-		int n = n + (n/10) +(n*10);
-	while(true) {
+	public static void main(String[] args) {
+		boolean[] check = new boolean[100001];
 		
-		if(n<10000) {
-			System.out.println(n);
-		}break;
+		for(int i=0; i<10001; i++) {
+			int n = d(i);
+		
+			if(n < 10001) {
+				check[n] = true;
+			}
+		}
 	}
+	public static int d(int number) {
+		int sum = number;
+		while(number !=0 ) {
+			sum = sum + (number%10);
+			number = number/10;
+		}
+		return sum;
 	}
-
-	
 }
