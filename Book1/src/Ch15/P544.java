@@ -3,11 +3,11 @@ package Ch15;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
+
 public class P544 {
 	public static void main(String[] args) {
 		long millisecond = 0;
-		try (
-			FileInputStream fis = new FileInputStream("a.zip");
+		try (FileInputStream fis = new FileInputStream("a.zip");
 			FileOutputStream fos = new FileOutputStream("cozy.zip")){
 			
 			millisecond = System.currentTimeMillis();
