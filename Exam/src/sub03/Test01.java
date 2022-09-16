@@ -1,4 +1,4 @@
-package Sub03;
+package sub03;
 /*
  * 날짜 : 2022-09-02
  * 이름 : 장인화

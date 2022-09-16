@@ -1,4 +1,4 @@
-package Sub03;
+package sub03;
 
 public class Test08 {
 
