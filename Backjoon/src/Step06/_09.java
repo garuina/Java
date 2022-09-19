@@ -7,19 +7,27 @@ public class _09 {
 		
 		Scanner sc = new Scanner(System.in);
 		String A = sc.next();
-		int cnt = 0;
+		int cnt1 = 0;
+		int cnt2 = 0;
 		int tot = 0;
 		
 		String arr1 [] = {"c=", "c-", "dz=",
 						"d-", "lj", "nj",
 						"s=", "z="}; 
-		for(int i=0; i<A.length()-1; i++) {
-			String B = A.substring(i, i+2);
-			for(int j=0; j<arr1.length;j++) {
-				if(B.equals(arr1[j])) {
-					cnt+=1;
-				}
-			}tot = (A.length() - cnt*2)+cnt;
-		}System.out.println(tot);
+		
+		String B = A.replace("c=", "a");
+		String C = B.replace("c-", "a");
+		String D = C.replace("dz=", "a");
+		String E = D.replace("d-", "a");
+		String F = E.replace("lj", "a");
+		String G = F.replace("nj", "a");
+		String H = G.replace("s=", "a");
+		String I = H.replace("z=", "a");
+		
+				
+		System.out.println(I.length());
+		
+	
+		}
 	}
-}
+
