@@ -10,13 +10,17 @@ public class _10 {
 		
 		for(int i=0; i<N; i++) {
 			String A = sc.next();
-			
 			for(int k=0; k<A.length(); k++) {
-				char B = A.charAt(k);
-				A.indexOf(B);
-				
+				A.charAt(k)
 			}
+			
+			
+
+		
 		}
+		
+		
 		
 	}
 }
+

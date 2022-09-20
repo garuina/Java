@@ -2,7 +2,7 @@ package Step05;
 
 public class _02 {
 	public static void main(String[] args) {
-		boolean[] check = new boolean[100001];
+		boolean[] check = new boolean[10001];
 		
 		for(int i=0; i<10001; i++) {
 			int n = d(i);
