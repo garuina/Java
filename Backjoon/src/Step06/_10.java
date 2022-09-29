@@ -7,12 +7,23 @@ public class _10 {
 		
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
+		int cnt = 0;
 		
 		for(int i=0; i<N; i++) {
 			String A = sc.next();
-			for(int k=0; k<A.length(); k++) {
-				A.charAt(k)
+			
+			for(int j=0; j<A.length(); j++) {
+				for(int k=1; k<A.length(); k++) {
+					if(A.charAt(i) == A.charAt(j) && ) {
+						
+						
+					}
+					
+					
+				}
 			}
+				
+			
 			
 			
 
