@@ -15,7 +15,7 @@ public class _10 {
 			for(int j=0; j<A.length(); j++) {
 				for(int k=1; k<A.length(); k++) {
 					if(A.charAt(i) == A.charAt(j) && ) {
-						
+						 
 						
 					}
 					
