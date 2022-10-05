@@ -19,7 +19,10 @@ public class _01 {
 			}
 			cnt++;
 		}
-		System.out.println(cnt);
-		
+		if(B * cnt >2100000000 || C * cnt >2100000000) {
+			System.out.println(-1);
+		}else {
+			System.out.println(cnt);
+		}
 	}
 }
