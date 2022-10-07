@@ -14,15 +14,12 @@ public class _01 {
 		int cnt = 0;
 		
 		while(true) {
-			if ( A + B * cnt < C * cnt) {
+			if ( (C *cnt)-(A + (B * cnt)) > 0) {
 				break;
 			}
 			cnt++;
 		}
-		if(B * cnt >2100000000 || C * cnt >2100000000) {
-			System.out.println(-1);
-		}else {
-			System.out.println(cnt);
+		System.out.println(cnt);
 		}
 	}
-}
+
