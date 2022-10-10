@@ -3,35 +3,49 @@ package Step06;
 import java.util.Scanner;
 
 public class _10 {
+	
+	static Scanner in = new Scanner(System.in);
+	
 	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
-		int cnt = 0;
+		int count = 0;
+		int N = in.nextInt();
 		
 		for(int i=0; i<N; i++) {
-			String A = sc.next();
-			
-			for(int j=0; j<A.length(); j++) {
-				for(int k=1; k<A.length(); k++) {
-					if(A.charAt(i) == A.charAt(j) && ) {
-						 
-						
-					}
-					
-					
-				}
+			if(check() == true) {
+				count++;
 			}
-				
-			
-			
-			
-
-		
 		}
-		
-		
-		
+		System.out.println(count);
+	}
+	
+	public static boolean check() {
+ 	 boolean [] check = new boolean[26];
+ 	 int prev = 0;
+ 	 String str = in.next();
+ 	 
+ 	 for (int i=0; i < str.length(); i++) {
+ 		 int now = str.charAt(i);
+ 		 
+ 		 
+ 		 if(prev != now) {
+ 			 
+ 			 if(check[now - 'a'] == false) {
+ 				 check[now - 'a'] = true;
+ 				 prev = now;
+ 			 }
+ 			 
+ 			 else {
+ 				 return false;
+ 			 }
+ 		 }
+ 		 else {
+ 			 continue;
+ 		 }
+ 	 }
+	
+ 	 return true;
+	
 	}
 }
+	
 

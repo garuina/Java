@@ -11,15 +11,11 @@ public class _01 {
 		int B = sc.nextInt();
 		int C = sc.nextInt();
 		
-		int cnt = 0;
-		
-		while(true) {
-			if ( A + B * cnt < C * cnt) {
-				break;
-			}
-			cnt++;
+		if(C <= B) {
+			System.out.println("-1");
 		}
-		System.out.println(cnt);
-		
+		else {
+			System.out.println( (A/(C-B))+1 );
+		}
 	}
 }
