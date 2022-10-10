@@ -13,11 +13,11 @@ public class _04 {
 		int t = 0;
 		
 		while(true) {
-			t += a * d;
+			t += a;
 			if(v <= t) {
 				break;
 			}
-			t -= b*d;
+			t -= b;
 			d++;
 		}
 		System.out.println(d);
