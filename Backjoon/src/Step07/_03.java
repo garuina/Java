@@ -7,19 +7,11 @@ public class _03 {
 		
 	Scanner sc = new Scanner(System.in);
 	int x = sc.nextInt();
-	int s = 0;
+
+	1 2 4 7 
+	3
+	6
 	
-	int n = 1;
-	int m = 1;
-	
-	
-	while(true) {
-		if(s+1 == ) {
-			
-		}
-	}
-			
-		
 		
 	}
 }
