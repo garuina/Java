@@ -8,9 +8,6 @@ public class _03 {
 	Scanner sc = new Scanner(System.in);
 	int x = sc.nextInt();
 
-	1 2 4 7 
-	3
-	6
 	
 		
 	}
